@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".company.ui.post.post_jobs.PostJob"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Post Job"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:background="@drawable/search_bar"
+                android:hint="Title (required)"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/jobRolePost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:background="@drawable/search_bar"
+                android:hint="Job Role (required)"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/job_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobRolePost"
+                android:background="@drawable/search_bar"
+                android:hint="Job Description (required)"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/skills_required"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_description"
+                android:background="@drawable/search_bar"
+                android:hint="Skills Required (required)"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:lines="4"
+                android:textAlignment="gravity"
+                android:gravity="top"
+
+                />
+
+            <EditText
+                android:id="@+id/job_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skills_required"
+                android:background="@drawable/search_bar"
+                android:hint="Job Details (required)"
+                android:lines="4"
+                android:gravity="top"
+                android:textAlignment="gravity"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/jobAddressLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_details"
+                android:background="@drawable/search_bar"
+                android:hint="Address Line (required)"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/salaryPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobAddressLine"
+                android:background="@drawable/search_bar"
+                android:hint="Salary"
+                android:paddingVertical="8dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/salaryPost"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:entries="@array/categories"
+                android:textAlignment="gravity"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:id="@+id/save_post_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="@color/black"
+                android:text="Post"/>
+        </RelativeLayout>
+</ScrollView>

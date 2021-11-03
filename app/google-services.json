@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "296737166643",
+    "firebase_url": "https://fir-learn-1ba58-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-learn-1ba58",
+    "storage_bucket": "fir-learn-1ba58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296737166643:android:567c43685cf43cd7351a46",
+        "android_client_info": {
+          "package_name": "com.example.firebasetry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296737166643-qng128v45e74r4e7rs2jlvqqarpm2rd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC42_3f6wu5K438PG-IU2MXKlBYyR_sbL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296737166643-qng128v45e74r4e7rs2jlvqqarpm2rd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296737166643:android:9d1fdcb9d48fa453351a46",
+        "android_client_info": {
+          "package_name": "com.example.jobfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296737166643-qng128v45e74r4e7rs2jlvqqarpm2rd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC42_3f6wu5K438PG-IU2MXKlBYyR_sbL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296737166643-qng128v45e74r4e7rs2jlvqqarpm2rd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296737166643:android:2dbd55f2c8e5a278351a46",
+        "android_client_info": {
+          "package_name": "com.example.jobfinderapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296737166643-qng128v45e74r4e7rs2jlvqqarpm2rd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC42_3f6wu5K438PG-IU2MXKlBYyR_sbL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296737166643-qng128v45e74r4e7rs2jlvqqarpm2rd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

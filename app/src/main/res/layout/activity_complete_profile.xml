@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".job_seeker.ui.home_jobs_notification_profile.profile.CompleteProfile"
+    android:padding="20dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Complete Profile"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/preferredJobText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/search_bar"
+        android:hint="preferred job"
+        android:paddingVertical="8dp"
+        android:paddingLeft="15dp"
+
+        android:textSize="16sp" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preferredJobText"
+        android:hint="education"
+        android:id="@+id/educationText"
+        android:background="@drawable/search_bar"
+        android:layout_marginVertical="10dp"
+        android:paddingVertical="8dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/skills_completeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/educationText"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/search_bar"
+        android:hint="skills"
+        android:paddingVertical="8dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        />
+
+
+    <EditText
+        android:id="@+id/experience_completeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skills_completeProfile"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/search_bar"
+        android:gravity="top"
+        android:hint="experience"
+        android:lines="3"
+        android:paddingVertical="8dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/description_completeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/experience_completeProfile"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/search_bar"
+        android:gravity="top"
+        android:hint="description"
+        android:lines="6"
+        android:paddingVertical="8dp"
+        android:paddingLeft="15dp"
+        android:textAlignment="gravity"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/save_complete_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_completeProfile"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:text="Save"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@color/background_color"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/project_icon_concept_only_logo"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/copyrights_text"
+        android:layout_marginBottom="5dp"
+
+         />
+
+    <TextView
+        android:id="@+id/copyrights_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright @ Job Finder"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+         />
+
+
+
+</RelativeLayout>

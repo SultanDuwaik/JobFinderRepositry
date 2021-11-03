@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jobfinder.job_seeker.ui.home_jobs_notification_profile.profile.ProfileFragment">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/jobSeekerProfileTop1">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@color/white"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/imageCard"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="25dp"
+        app:cardCornerRadius="60dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/default_profile_picture"
+            android:padding="3dp"
+            android:id="@+id/imageSource"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageCard"
+        android:textColor="#151313"
+        android:textSize="22dp" />
+
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/image"
+        android:padding="5dp"
+        android:background="@drawable/logout_button"
+        android:elevation="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/logoutImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/logout"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/personal_information_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jobSeekerProfileTop1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/category_card"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/informationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Personal Information"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/informationText"
+            android:paddingVertical="1dp"
+            android:text="Email:"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/informationText"
+            android:layout_alignParentRight="true"
+            android:paddingVertical="1dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailText"
+            android:paddingVertical="1dp"
+            android:text="Phone Number:"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailText"
+            android:layout_alignParentRight="true"
+            android:paddingVertical="1dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/genderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneText"
+            android:paddingVertical="1dp"
+            android:text="Gender:"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneText"
+            android:layout_alignParentRight="true"
+            android:paddingVertical="1dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderText"
+            android:paddingVertical="1dp"
+            android:text="Location:"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderText"
+            android:layout_alignParentRight="true"
+            android:paddingVertical="1dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/completeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_information_form"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/black"
+        android:text="Complete Profile" />
+
+
+
+
+    <RelativeLayout
+            android:id="@+id/descriptionForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/completeProfile"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/category_card"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionText"
+                android:paddingVertical="1dp"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/text_gray_color"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/skillsForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionForm"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/category_card"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/skillsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skillsText"
+                android:paddingVertical="1dp"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/text_gray_color"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/experienceForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skillsForm"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/category_card"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/experienceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/experienceText"
+                android:paddingVertical="1dp"
+                android:text=""
+                android:textColor="@color/text_gray_color"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/educationForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preferredJobForm"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/category_card"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/educationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/educationText"
+                android:paddingVertical="1dp"
+                android:text=""
+                android:textColor="@color/text_gray_color"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/preferredJobForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/experienceForm"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/category_card"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/preferredJobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferred Job"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferredJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preferredJobText"
+                android:paddingVertical="1dp"
+                android:text=""
+                android:textColor="@color/text_gray_color"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/educationForm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:text="Edit Profile" />
+
+
+
+</RelativeLayout>
+</ScrollView>

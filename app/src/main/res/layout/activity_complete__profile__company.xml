@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Complete_Profile_Company"
+    android:padding="10dp"
+    android:background="@color/background_color">
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/project_icon_concept_only_logo" />
+
+            <TextView
+                android:id="@+id/createAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Create Account"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_layout_name"
+                android:layout_below="@id/createAccountText"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/edit_text_overview_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/search_bar"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:hint="overview"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_text_address_company"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/linear_layout_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_bar"
+                android:gravity="start"
+                android:hint="address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"/>
+
+
+            <Button
+                android:id="@+id/create_account"
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:backgroundTint="@color/black"
+                android:text="Create Account"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/edit_text_address_company"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

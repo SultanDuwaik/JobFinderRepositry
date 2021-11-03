@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".job_seeker.ui.home_jobs_notification_profile.home.HomeFragment"
+    android:background="@color/background_color"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/searchNavBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/search_bar"
+                android:backgroundTint="@color/background_color"
+                android:drawableLeft="@drawable/search_icon_c"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:hint="search.."
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/three_dots"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchNavBar"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specializations"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:id="@+id/specializationsText"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specializationsText"
+                android:id="@+id/categoryRecycleView"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        android:layout_below="@+id/searchNavBar"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

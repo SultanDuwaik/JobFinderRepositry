@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jobfinder.Signup_Company"
+    android:layout_margin="10dp"
+    android:background="@color/background_color">
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/project_icon_concept_only_logo" />
+
+            <TextView
+                android:id="@+id/createAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Create Account"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_text_name_company"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/createAccountText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_bar"
+                android:hint="name company"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+
+
+            <EditText
+                android:id="@+id/edit_text_email_company"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_text_name_company"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_bar"
+                android:hint="enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/edit_text_password_company"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/search_bar"
+                android:hint="create password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/edit_text_email_company"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_phone_company"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/search_bar"
+                android:hint="phone number"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/edit_text_password_company"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <Spinner
+                android:id="@+id/locationSpinner_company"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/edit_text_phone_company"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/locations"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:tooltipText="select location" />
+
+            <Button
+                android:id="@+id/Next_button"
+                android:layout_width="fill_parent"
+                android:layout_height="49sp"
+                android:layout_below="@+id/locationSpinner_company"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/black"
+                android:text="Next"
+                android:layout_marginHorizontal="10dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

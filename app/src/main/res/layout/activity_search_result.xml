@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".job_seeker.ui.search_result.SearchResultActivity"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/searchNavBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <EditText
+                android:id="@+id/searchBarSearchResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/search_bar"
+                android:backgroundTint="@color/background_color"
+                android:drawableLeft="@drawable/search_icon_c"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:hint="search.."
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                android:inputType="text"/>
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/three_dots"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        android:layout_below="@+id/searchNavBar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchNavBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>

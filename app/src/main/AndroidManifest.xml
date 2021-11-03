@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jobfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/project_icon_concept_only_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/project_icon_concept_only_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JobFinder">
+        <activity
+            android:name=".company.Applicant"
+            android:exported="true" />
+        <activity android:name=".job_seeker.ui.Job" />
+        <activity android:name=".Signup_Company" />
+        <activity android:name=".Complete_Profile_Company" />
+        <activity android:name=".job_seeker.ui.home_jobs_notification_profile.profile.CompleteProfile" />
+        <activity android:name=".SelectUserType" />
+        <activity android:name=".job_seeker.ui.search_result.SearchResultActivity" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".company.MainBottomNavigationCompany" />
+        <activity android:name=".job_seeker.MainBottomNavigation" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

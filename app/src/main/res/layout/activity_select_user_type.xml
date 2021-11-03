@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectUserType"
+    android:background="@color/background_color"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Select User Type"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/linearLayout"
+         />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/Navigation_to_login_seeker"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/black"
+            android:text="Job Seeker"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+
+
+            />
+        <Button
+            android:id="@+id/Navigation_to_login_company"
+            android:layout_margin="15dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:textColorHighlight="@color/white"
+            android:textSize="18dp"
+            android:text="Company"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
